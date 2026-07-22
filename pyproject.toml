@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 77.0.30"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["build*", "dist*"]
+
+[tool.setuptools.package-data]
+griffeye_to_pdf = []
+
+[project]
+name = "griffeye-to-pdf"
+version = "1.0.0"
+dependencies = [
+    "playwright>=1.61.0",
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "yack12000", email = "your@email.here"}
+]
+maintainers = [
+  {name = "yack12000", email = "your@email.here"}
+]
+description = "Converts Griffeye HTML output to a PDF"
+readme = "README.md"
+keywords = ["digital forensics", "dfir", "griffeye", "pdf", "convert"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/yack12000/Griffeye-to-PDF"
+
+[project.scripts]
+griffeye-to-pdf = "griffeye_to_pdf.griffeye_to_pdf:main"
