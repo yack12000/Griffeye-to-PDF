@@ -1,0 +1,7 @@
+__pycache__/
+*.py[codz]
+build/
+dist/
+*.egg-info/
+@eaDir*
+Thumbs.db
