@@ -1,12 +1,9 @@
-*****************
-*				*
-*   Griffeye	*
-*     To		*
-*	 PDF		*
-*				*
-*****************
+Convert Griffeye HTML reports to a non-standard sized PDF document
+- multiple columns from the HTML report can be printed and not limited to page size. 
 
 to run on a fresh online system:
 1) Install pip install playwright
 
-2) run script from cmd line: python griffeye_to_pdf.py <html file> <output file>
+Can be run on an offline system as the executable packlage contains all the modules neccessary.
+
+USAGE syntax - run script from cmd line: python griffeye_to_pdf.py <html file> <output file>
