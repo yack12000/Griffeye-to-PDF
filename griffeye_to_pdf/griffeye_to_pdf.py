@@ -160,13 +160,12 @@ def generate_pdf(html_path, pdf_file):
                 }
             }
             """)
+            page.emulate_media(media="print")
             page.pdf(
                 path=pdf_file,
-                width=f"{pdf_width}in",
-                height="11in",
+                height=f"{pdf_width}in",
                 landscape=True,
                 print_background=True,
-
                 display_header_footer=True,
 
                 header_template=f"""
@@ -195,8 +194,7 @@ def generate_pdf(html_path, pdf_file):
 
         print(f"PDF successfully generated: {pdf_file}")
         print(f"Detected columns: {column_count}")
-        print(f"PDF width used: {pdf_width} inches")
-
+        print(f"PDF Width: {pdf_width}")
     except Exception as e:
         print(f"Unable to generate PDF: {e}")
         sys.exit(1)
