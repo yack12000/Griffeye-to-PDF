@@ -6,6 +6,6 @@ to run on a fresh online system:
 
 Can be run on an offline system as the executable packlage contains all the modules neccessary.
 
-USAGE syntax - run script from cmd line: python griffeye_to_pdf.py <html file> <output file>
+USAGE syntax - run script from cmd line: **python griffeye_to_pdf.py <html file> <output file>**
 
 Many thanks to digitalsleuth Digital Sleuth 
